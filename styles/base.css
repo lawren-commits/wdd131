@@ -89,7 +89,7 @@ h1 {
 /* Profile Image */
 
 .profile-image {
-    width: 120px;
+    width: 90px;
     height: auto;
     display: block;
     margin: 0 auto 15px auto;
@@ -100,7 +100,7 @@ h1 {
 /* Samoa Image */
 
 .country-image {
-    width: 250px;
+    width: 90px;
     height: auto;
     display: block;
     margin: 0 auto 15px auto;
