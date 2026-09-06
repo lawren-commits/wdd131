@@ -19,3 +19,43 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: navy;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+``
