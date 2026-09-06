@@ -32,6 +32,19 @@ main {
     margin: 0 auto;
     padding: 1rem;
 }
+.profile-image {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.country-image {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 .card {
     border: 1px solid #ccc;
