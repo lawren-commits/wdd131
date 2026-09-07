@@ -56,7 +56,7 @@ main {
     grid-template-columns: 70% 30%;
     gap: 1rem;
 
-    max-width: 1200px;
+    max-width: 120px;
     width: 95%;
     margin: 2rem auto;
 }
@@ -95,7 +95,7 @@ h1 {
 
 .profile-image {
 2
-width: 150px;
+width: 100px;
 height: auto;
 float: right;
 margin-left: 15px;
