@@ -1,145 +1,191 @@
-/* WDD 131 Home Page Styles */
-
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-
-:root {
-    --primary-color: #1d4f7a;
-    --secondary-color: #f5f5f5;
-    --text-color: #333;
-}
-
+ 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
-    color: var(--text-color);
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    background-color: #fff;
 }
-
-/* Header */
-
+ 
+/* HEADER */
 header {
-    background-color: var(--primary-color);
+    width: 96%;
+    margin: 1rem auto 0;
+    background-color: #24577d;
     color: white;
-    padding: 1rem;
+    text-align: center;
 }
-
+ 
 #course-title {
     display: block;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
-
+ 
+/* NAVIGATION */
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    background-color: #333;
 }
-
+ 
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
-
+ 
 nav a:hover {
-    color: yellow;
+    background-color: #555;
+    color: white;
 }
-
-/* Main Layout */
-
+ 
+/* MAIN */
 main {
+    max-width: 860px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
     display: grid;
-    grid-template-columns: 70% 30%;
-    gap: 1rem;
-
-    max-width: 120px;
-    width: 95%;
-    margin: 2rem auto;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
 }
-
-h1 {
+ 
+main h1 {
     grid-column: 1 / 3;
     text-align: center;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: #17324d;
+    margin: 0 0 0.5rem;
 }
-
-/* Cards */
-
+ 
+/* CARDS */
 .card {
-    background-color: white;
-    border: 1px solid #ccc;
+    border: 1px solid #bbb;
     border-radius: 8px;
     overflow: hidden;
-    width: 100%;
+    background-color: white;
+    min-height: 390px;
 }
-
-}
-
+ 
 .card h2 {
-    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0.7rem;
+    background-color: #24577d;
     color: white;
     text-align: center;
-    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
 }
-
-.card-content {
-    padding: 15px;
+ 
+/* ABOUT ME */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 130px;
+    gap: 1rem;
+    padding: 1rem;
 }
-
-/* About Me Image */
-
-.profile-image {
-2
-width: 100px;
-height: auto;
-float: right;
-margin-left: 15px;
+ 
+.about-content p {
+    line-height: 1.5;
+    font-size: 0.9rem;
 }
-
-/* Samoa Image */
-
-.country-image {
-    width: 100px;
+ 
+.about-content img {
+    width: 130px;
     height: auto;
-    float: left;
-    margin-right: 15px
 }
-
-.country-section {
-    clear: both;
-    margin-top: 25px;
-}
-
-.country-section h3 {
+ 
+.card h3 {
     text-align: center;
-    margin-bottom: 15px;
+    font-size: 1rem;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 0.4rem;
+    color: #17324d;
 }
-
-/* Resources */
-
+ 
+/* RESOURCES */
+.resources {
+    padding: 2rem 1rem;
+}
+ 
 .resources ul {
-    padding: 20px 40px;
+    padding-left: 1.5rem;
 }
-
+ 
 .resources li {
-    margin-bottom: 10px;
+    margin-bottom: 0.7rem;
 }
-
-/* Footer */
-
+ 
+.resources a {
+    color: #0000cc;
+}
+ 
+.resources a:hover {
+    color: #24577d;
+}
+ 
+.resources img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+ 
+/* FOOTER */
 footer {
-    background-color: var(--primary-color);
+    width: 96%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #24577d;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
 }
-
+ 
 footer p {
-    margin: 5px;
+    margin: 0.4rem;
 }
+ 
+#lastModified {
+    color: #ffff00;
+    font-size: 0.8rem;
+}
+ 
+/* MOBILE */
+@media (max-width: 650px) {
+ 
+    nav {
+        flex-direction: column;
+    }
+ 
+    nav a {
+        width: 100%;
+    }
+ 
+    main {
+        grid-template-columns: 1fr;
+    }
+ 
+    main h1 {
+        grid-column: 1;
+    }
+ 
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+ 
+    .about-content img {
+        width: 150px;
+    }
+ 
+    .card {
+        min-height: auto;
+    }
+}
+has context menu
