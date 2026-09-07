@@ -34,7 +34,7 @@ h1 {
 }
 
 .profile-image {
-    width: 150px;
+    width: 90px;
     height: auto;
     float: right;
     margin-left: 15px;
@@ -43,8 +43,8 @@ h1 {
 }
 
 .country-image {
-    width: 150px;
-    height: auto;
+    width: 90px;
+    height: 15px;
     float: left;
     margin-right: 15px;
     border: 1px solid #ccc;
