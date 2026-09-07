@@ -78,19 +78,19 @@ h1 {
 .about-content {
     display: flex;
     gap: 15px;
-    padding: 15px;
+    padding: 10px;
 }
 
 /* Profile Image */
 .profile-img {
-    width: 90px;
+    width: 120px;
     height: auto;
     border: 1px solid #ccc;
 }
 
 /* Country Section */
 .country {
-    padding: 20px;
+    padding: 10px;
 }
 
 .country h3 {
