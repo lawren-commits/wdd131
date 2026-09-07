@@ -71,19 +71,19 @@ h1 {
     color: white;
     text-align: center;
     margin: 0;
-    padding: 0.75rem;
+    padding: 10px;
 }
 
 /* About Content */
 .about-content {
     display: flex;
-    gap: 20px;
-    padding: 20px;
+    gap: 15px;
+    padding: 15px;
 }
 
 /* Profile Image */
 .profile-img {
-    width: 150px;
+    width: 90px;
     height: auto;
     border: 1px solid #ccc;
 }
@@ -106,14 +106,14 @@ h1 {
 
 /* Samoa Image */
 .country-img {
-    width: 180px;
+    width: 100px;
     height: auto;
     border: 1px solid #ccc;
 }
 
 /* Resources */
 .resources ul {
-    padding: 20px 40px;
+    padding: 20px 30px;
 }
 
 .resources li {
@@ -126,6 +126,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 20px;
 }
 
 #lastModified {
@@ -146,6 +147,7 @@ footer {
     .about-content,
     .country-info {
         flex-direction: column;
+        text-align: center; 
         align-items: center;
     }
 
