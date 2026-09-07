@@ -45,7 +45,7 @@ nav a:hover {
 /* Main */
 main {
     max-width: 1100px;
-    margin: 20px auto;
+    margin: 0px auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
@@ -71,7 +71,7 @@ h1 {
     color: white;
     text-align: center;
     margin: 0;
-    padding: 10px;
+    padding: 8px;
 }
 
 /* About Content */
