@@ -77,6 +77,8 @@ h1 {
 /* About Content */
 .about-content {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 15px;
     padding: 10px;
 }
@@ -84,7 +86,8 @@ h1 {
 /* Profile Image */
 .profile-img {
     width: 120px;
-    height: auto;
+    height: 120px;
+    object-fit: cover;
     border: 1px solid #ccc;
 }
 
@@ -106,7 +109,7 @@ h1 {
 
 /* Samoa Image */
 .country-img {
-    width: 100px;
+    width: 150px;
     height: auto;
     border: 1px solid #ccc;
 }
