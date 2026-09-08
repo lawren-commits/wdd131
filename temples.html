@@ -1,1 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temple Album</title>
 
+  <!-- Mobile-first styles (base styles first, then larger-screen overrides) -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/large.css" media="screen and (min-width: 48em)">
+
+  <!-- Deferred JavaScript -->
+  <script defer src="js/scripts.js"></script>
+</head>
+<body>
+  <header>
+    <div class="site-title">Temple Album</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#old">Old</a></li>
+        <li><a href="#new">New</a></li>
+        <li><a href="#large">Large</a></li>
+        <li><a href="#small">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temple Album</h1>
+
+    <!-- At least nine figure elements with placeholder images and captions -->
+    <section class="temples">
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="Temple 1 placeholder image">
+        <figcaption>Temple of Dawn</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="Temple 2 placeholder image">
+        <figcaption>Temple of the Sun</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="Temple 3 placeholder image">
+        <figcaption>Temple of the Moon</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="Temple 4 placeholder image">
+        <figcaption>Temple of the River</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="Temple 5 placeholder image">
+        <figcaption>Temple of the Mountain</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="Temple 6 placeholder image">
+        <figcaption>Temple of the Forest</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="Temple 7 placeholder image">
+        <figcaption>Temple of the Sea</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="Temple 8 placeholder image">
+        <figcaption>Temple of the Wind</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.jpg" alt="Temple 9 placeholder image">
+        <figcaption>Temple of Light</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="copyright-year"></span> Your Name</p>
+    <p>Last modified: <span id="last-modified"></span></p>
+    <p><a href="privacy.html">Privacy</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <script>
+    // Fill in dynamic footer information
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    document.getElementById('last-modified').textContent = document.lastModified;
+  </script>
+</body>
+</html>
