@@ -43,11 +43,19 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: 400;
-    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav a:hover {
     color: #3498db;
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+nav a:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
 }
 
 /* Main Content */
@@ -93,8 +101,8 @@ h2 {
 }
 
 .content img {
-    max-width: 300px;
     width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
@@ -179,6 +187,7 @@ footer p:last-child {
 
     nav a {
         font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
     }
 
     h1 {
