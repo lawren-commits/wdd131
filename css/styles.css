@@ -31,6 +31,13 @@ header {
   font-weight: 600;
 }
 
+/* Use Flexbox on the nav element as requested */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -45,16 +52,22 @@ nav a {
   padding: 0.35rem 0.6rem;
   border-radius: 4px;
   display: inline-block;
+  transition: background-color 160ms ease, transform 160ms ease;
 }
 
+/* Hover effect on navigation elements */
 nav a:hover,
 nav a:focus {
   background: rgba(255,255,255,0.12);
+  transform: translateY(-1px);
   outline: none;
 }
 
 main {
   padding: 1rem;
+  /* limit main width and center for larger viewports */
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -63,11 +76,16 @@ h1 {
 }
 
 .temples {
-  /* Mobile: single-column flow */
+  /* Mobile: single-column flow using CSS Grid */
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+/* Make the card/grid responsive using auto-fit */
+.temples {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 figure {
@@ -111,4 +129,30 @@ a:focus {
 @media print {
   nav { display: none; }
   header, footer { color: #000; background: transparent; }
+}
+
+/* Responsive breakpoints: enhance layout on wider screens */
+@media (min-width: 640px) {
+  header {
+    padding: 1rem 1.25rem;
+  }
+
+  nav ul {
+    gap: 0.75rem;
+  }
+
+  .site-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 900px) {
+  /* Provide more space for the grid and keep content centered */
+  main {
+    padding: 1.5rem;
+  }
+
+  .temples {
+    gap: 1.25rem;
+  }
 }
