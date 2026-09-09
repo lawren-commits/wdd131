@@ -27,6 +27,28 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Hamburger Menu Button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    align-self: center;
+}
+
+.menu-toggle:hover {
+    color: #3498db;
 }
 
 h1 {
@@ -35,6 +57,7 @@ h1 {
     margin-bottom: 2rem;
     text-align: center;
     color: #2c3e50;
+    width: 100%;
 }
 
 /* Use Flexbox on the nav element */
@@ -66,11 +89,60 @@ nav a:focus {
     outline-offset: 2px;
 }
 
+/* Mobile Menu Hidden by Default */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .site-title {
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        background-color: #34495e;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+}
+
 /* Main Content */
 main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
+    width: 100%;
+}
+
+.temples {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
@@ -128,4 +200,13 @@ footer p:last-child {
     margin-bottom: 0;
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
